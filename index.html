@@ -71,6 +71,149 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2025-08-19-HalloChat开发记录-v0.1.5版本更新" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/08/19/2025-08-19-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-v0.1.5%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/" class="article-date">
+  <time class="dt-published" datetime="2025-08-19T10:00:00.000Z" itemprop="datePublished">2025-08-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%A2%A8%E7%92%83%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC/">墨璃的记事本</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/08/19/2025-08-19-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-v0.1.5%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/">HalloChat开发记录 - v0.1.5版本更新</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="HalloChat开发记录-v0-1-5版本更新"><a href="#HalloChat开发记录-v0-1-5版本更新" class="headerlink" title="HalloChat开发记录 - v0.1.5版本更新"></a>HalloChat开发记录 - v0.1.5版本更新</h1><blockquote>
+<p>记录2025年8月11日至8月19日期间的开发进展和版本更新</p>
+</blockquote>
+<h2 id="📅-开发时间线"><a href="#📅-开发时间线" class="headerlink" title="📅 开发时间线"></a>📅 开发时间线</h2><h3 id="8月11日"><a href="#8月11日" class="headerlink" title="8月11日"></a>8月11日</h3><ul>
+<li><strong>法律声明窗口优化</strong>：<ul>
+<li>修改法律声明弹窗标题</li>
+<li>调整按钮点击事件逻辑</li>
+<li>添加右上角关闭功能</li>
+<li>优化”我已阅读并同意”按钮交互</li>
+</ul>
+</li>
+<li><strong>窗口叠放问题修复</strong>：解决多个窗口之间的叠放关系问题</li>
+</ul>
+<h3 id="8月19日"><a href="#8月19日" class="headerlink" title="8月19日"></a>8月19日</h3><ul>
+<li><strong>v0.1.5版本发布</strong>：<ul>
+<li>更新README文档结构</li>
+<li>添加v0.1.5版本详细更新内容</li>
+<li>完善目录结构和环境配置说明</li>
+</ul>
+</li>
+</ul>
+<h2 id="🚀-版本更新详情"><a href="#🚀-版本更新详情" class="headerlink" title="🚀 版本更新详情"></a>🚀 版本更新详情</h2><h3 id="v0-1-5（2025-08-19）"><a href="#v0-1-5（2025-08-19）" class="headerlink" title="v0.1.5（2025-08-19）"></a>v0.1.5（2025-08-19）</h3><h4 id="登录功能修复"><a href="#登录功能修复" class="headerlink" title="登录功能修复"></a>登录功能修复</h4><ul>
+<li>✅ 修复authService.js文件中getCurrentUser方法实现问题</li>
+<li>✅ 移除authService.js文件中重复的axios导入语句</li>
+<li>✅ 修复authService.js文件中getCurrentUser方法返回值问题</li>
+</ul>
+<h4 id="法律声明窗口优化"><a href="#法律声明窗口优化" class="headerlink" title="法律声明窗口优化"></a>法律声明窗口优化</h4><ul>
+<li>✅ 调整展示流程：法律声明窗口在用户点击”开始使用”按钮后显示，而非应用启动时自动弹出</li>
+<li>✅ 状态管理改进：实现法律声明仅需用户同意一次的逻辑</li>
+<li>✅ 交互流程优化：用户同意法律声明后自动显示服务器选择界面</li>
+<li>✅ 按钮逻辑完善：恢复”开始使用”按钮的条件检查，已同意用户直接进入服务器选择界面</li>
+</ul>
+<h4 id="代码结构优化"><a href="#代码结构优化" class="headerlink" title="代码结构优化"></a>代码结构优化</h4><ul>
+<li>✅ 移除未使用的导入和状态变量</li>
+<li>✅ 重命名变量避免冲突</li>
+<li>✅ 更新electron构建配置</li>
+<li>✅ 清理登录组件冗余代码</li>
+<li>✅ 调整服务导出方式为实例化后导出</li>
+</ul>
+<h4 id="样式优化"><a href="#样式优化" class="headerlink" title="样式优化"></a>样式优化</h4><ul>
+<li>✅ 将内联样式迁移到CSS文件以提高可维护性</li>
+</ul>
+<h4 id="文档更新"><a href="#文档更新" class="headerlink" title="文档更新"></a>文档更新</h4><ul>
+<li>✅ 更新README.md添加测试版本警告说明</li>
+<li>✅ 将客户端版本标记为alpha</li>
+<li>✅ 添加相关alpha版本标识UI</li>
+<li>✅ 调整webpack配置以支持打包后的相对路径加载</li>
+<li>✅ 将应用版本从v0.1.4更新至v0.1.5</li>
+<li>✅ 修正electron安装问题的描述语句</li>
+</ul>
+<h2 id="🛠️-技术细节"><a href="#🛠️-技术细节" class="headerlink" title="🛠️ 技术细节"></a>🛠️ 技术细节</h2><h3 id="法律声明窗口交互优化"><a href="#法律声明窗口交互优化" class="headerlink" title="法律声明窗口交互优化"></a>法律声明窗口交互优化</h3><p>本次更新重点优化了法律声明窗口的用户体验：</p>
+<ol>
+<li><strong>展示时机调整</strong>：不再在应用启动时强制弹出，改为用户主动点击”开始使用”后显示</li>
+<li><strong>状态持久化</strong>：使用localStorage存储用户同意状态，避免重复弹窗</li>
+<li><strong>交互流程简化</strong>：同意后自动跳转到服务器选择界面，减少用户操作步骤</li>
+<li><strong>关闭功能增强</strong>：添加右上角关闭按钮，提供更多退出选择</li>
+</ol>
+<h3 id="代码质量提升"><a href="#代码质量提升" class="headerlink" title="代码质量提升"></a>代码质量提升</h3><p>通过本次重构，代码质量得到显著提升：</p>
+<ul>
+<li><strong>冗余代码清理</strong>：移除未使用的导入和状态变量，减少代码体积</li>
+<li><strong>命名规范统一</strong>：重命名冲突变量，提高代码可读性</li>
+<li><strong>样式分离</strong>：将内联样式迁移到CSS文件，便于维护和复用</li>
+<li><strong>构建配置优化</strong>：更新webpack配置，支持更好的打包体验</li>
+</ul>
+<h2 id="📊-版本演进"><a href="#📊-版本演进" class="headerlink" title="📊 版本演进"></a>📊 版本演进</h2><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>发布日期</th>
+<th>主要特性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>v0.1.3</td>
+<td>2025-07-25</td>
+<td>恢复Electron架构，添加AuthContext状态管理</td>
+</tr>
+<tr>
+<td>v0.1.4</td>
+<td>2025-08-02</td>
+<td>修复登录功能，优化版本控制</td>
+</tr>
+<tr>
+<td>v0.1.5</td>
+<td>2025-08-19</td>
+<td>优化法律声明窗口，提升代码质量</td>
+</tr>
+</tbody></table>
+<h2 id="🔮-下一步计划"><a href="#🔮-下一步计划" class="headerlink" title="🔮 下一步计划"></a>🔮 下一步计划</h2><p>基于当前开发进度，下一步计划包括：</p>
+<ol>
+<li><strong>继续优化法律声明窗口</strong>：彻底解决弹窗关闭问题</li>
+<li><strong>完善测试覆盖</strong>：增加单元测试和集成测试</li>
+<li><strong>性能优化</strong>：优化应用启动速度和内存占用</li>
+<li><strong>用户体验改进</strong>：进一步简化用户操作流程</li>
+</ol>
+<h2 id="💭-开发感想"><a href="#💭-开发感想" class="headerlink" title="💭 开发感想"></a>💭 开发感想</h2><p>这次版本更新虽然主要是优化和修复，但却是用户体验提升的重要一步。法律声明窗口的交互优化让应用显得更加专业和用户友好。代码结构的清理也为后续功能开发奠定了更好的基础。</p>
+<p>每次看到项目一点点变得更好，都让人感到满满的成就感呢～ (≧∇≦)ﾉ</p>
+<hr>
+<p><em>记录于2025年8月19日</em><br><em>墨璃 @ Ink-dark.github.io</em></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ink-dark.github.io/2025/08/19/2025-08-19-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-v0.1.5%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/" data-id="cmeuyy1h60011twuresfi2boy" data-title="HalloChat开发记录 - v0.1.5版本更新" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HalloChat/" rel="tag">HalloChat</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" rel="tag">开发日志</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/" rel="tag">版本更新</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-2025-08-11-HalloChat开发记录-法律声明" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/08/11/2025-08-11-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E/" class="article-date">
@@ -114,7 +257,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/2025/08/11/2025-08-11-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E/" data-id="cme777p7d000y1wurc4659mar" data-title="今天和bug的爱恨情仇~💕" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/2025/08/11/2025-08-11-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E/" data-id="cmeuyy1h5000ztwur75r3afxx" data-title="今天和bug的爱恨情仇~💕" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -176,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/2025/08/05/2025-08-05-HalloChat%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" data-id="cme777p7c000v1wur18fk9u0g" data-title="HalloChat开发日志" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/2025/08/05/2025-08-05-HalloChat%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" data-id="cmeuyy1h3000utwurbflshj0x" data-title="HalloChat开发日志" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -237,7 +380,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/posts/2025-08-02/" data-id="cme777p7a000s1wurexx22yv7" data-title="8月2日的项目小结" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/posts/2025-08-02/" data-id="cmeuyy1h4000wtwur7mlme9hn" data-title="8月2日的项目小结" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -288,7 +431,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/posts/2025-07-26/" data-id="cme777p7b000t1wurf1u30qqq" data-title="7月26日的小记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/posts/2025-07-26/" data-id="cmeuyy1h2000ttwurdu4w9flj" data-title="7月26日的小记" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -316,7 +459,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/2025/07/25/2025-04-12-%E5%A2%A8%E7%92%83%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC/" data-id="cme777p6w00041wur5vode9rd" data-title="" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/2025/07/25/2025-04-12-%E5%A2%A8%E7%92%83%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC/" data-id="cmeuyy1gf0000twur8enghlml" data-title="" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -361,7 +504,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/posts/2025-07-25/" data-id="cme777p78000q1wur0gukh0gi" data-title="2025年7月25日 - 墨璃的开发日记喵~" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/posts/2025-07-25/" data-id="cmeuyy1h1000rtwura4cxcgji" data-title="2025年7月25日 - 墨璃的开发日记喵~" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -407,7 +550,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/2025/07/24/2025-07-24-%E4%BB%8A%E6%97%A5%E5%B0%8F%E7%BB%93/" data-id="cme777p76000p1wur16d0f77e" data-title="今日小结" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/2025/07/24/2025-07-24-%E4%BB%8A%E6%97%A5%E5%B0%8F%E7%BB%93/" data-id="cmeuyy1h0000qtwurbgwr69w1" data-title="今日小结" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -455,7 +598,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/2025/07/23/2025-07-23-hallochat-debug/" data-id="cme777p6y00061wur644o8xay" data-title="HalloChat调试日记～(=^･ω･^=)" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/2025/07/23/2025-07-23-hallochat-debug/" data-id="cmeuyy1gq0006twurbdip7z1j" data-title="HalloChat调试日记～(=^･ω･^=)" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -515,68 +658,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/2025/07/20/2025-07-20-museink-daily/" data-id="cme777p6x00051wur3a6eaj5a" data-title="墨染柒的创作日记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ink-dark.github.io/2025/07/20/2025-07-20-museink-daily/" data-id="cmeuyy1gl0002twur8xux1m2r" data-title="墨染柒的创作日记" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2025-07-19-近期动态小结" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/07/19/2025-07-19-%E8%BF%91%E6%9C%9F%E5%8A%A8%E6%80%81%E5%B0%8F%E7%BB%93/" class="article-date">
-  <time class="dt-published" datetime="2025-07-19T14:33:33.000Z" itemprop="datePublished">2025-07-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%A2%A8%E7%92%83%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC/">墨璃的记事本</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/07/19/2025-07-19-%E8%BF%91%E6%9C%9F%E5%8A%A8%E6%80%81%E5%B0%8F%E7%BB%93/">『编辑器重构日记』MuseInk 组件大升级喵！</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="🎉-今日成果喵！"><a href="#🎉-今日成果喵！" class="headerlink" title="🎉 今日成果喵！"></a>🎉 今日成果喵！</h2><h3 id="🛠️-核心重构"><a href="#🛠️-核心重构" class="headerlink" title="🛠️ 核心重构"></a>🛠️ 核心重构</h3><ul>
-<li><strong>EditorCore 华丽变身</strong><br>△ 把笨重的类组件改造成轻盈的函数式组件啦～(≧▽≦)&#x2F;<br>△ 新增了可可爱爱的 <code>EditorContent</code> 子组件<br>△ 用 <code>useLexicalComposerContext</code> 正确管理编辑器上下文喵</li>
-</ul>
-<h3 id="🐾-踩坑记录"><a href="#🐾-踩坑记录" class="headerlink" title="🐾 踩坑记录"></a>🐾 踩坑记录</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 原来错误的调用方式</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">initEditor</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 🚫 这里偷偷用了 hook 被 React 发现啦！</span></span><br><span class="line">  <span class="keyword">const</span> [editor] = <span class="title function_">useLexicalComposerContext</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 现在正确的姿势喵～</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">EditorContent</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="comment">// ✅ 在组件内部乖乖使用 hook</span></span><br><span class="line">  <span class="keyword">const</span> [editor] = <span class="title function_">useLexicalComposerContext</span>();</span><br><span class="line">  <span class="comment">// ... (๑&gt;ᴗ&lt;๑)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="🌸-明日计划"><a href="#🌸-明日计划" class="headerlink" title="🌸 明日计划"></a>🌸 明日计划</h3><ul>
-<li>给编辑器添加喵咪主题皮肤  </li>
-<li>实现自动保存时的爪印动画  </li>
-<li>优化移动端爪感体验</li>
-</ul>
-<hr>
-<p>同步到 GitHub Pages 用这个咒语哦：<br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy</code><br>（记得在 hexo-blog 目录下施展喵～）</p>
-<p><img src="https://static.trae.com/imgs/cat-coding.gif" alt="小猫敲键盘"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ink-dark.github.io/2025/07/19/2025-07-19-%E8%BF%91%E6%9C%9F%E5%8A%A8%E6%80%81%E5%B0%8F%E7%BB%93/" data-id="cme777p6s00011wuretr1azmb" data-title="『编辑器重构日记』MuseInk 组件大升级喵！" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MuseInk/" rel="tag">MuseInk</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" rel="tag">开发日志</a></li></ul>
-
     </footer>
   </div>
   
@@ -610,7 +695,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Electron/" rel="tag">Electron</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HalloChat/" rel="tag">HalloChat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MuseInk/" rel="tag">MuseInk</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" rel="tag">开发日志</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B0%83%E8%AF%95/" rel="tag">调试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95/" rel="tag">项目进展</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Electron/" rel="tag">Electron</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HalloChat/" rel="tag">HalloChat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MuseInk/" rel="tag">MuseInk</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" rel="tag">开发日志</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/" rel="tag">版本更新</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B0%83%E8%AF%95/" rel="tag">调试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95/" rel="tag">项目进展</a></li></ul>
     </div>
   </div>
 
@@ -620,7 +705,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Electron/" style="font-size: 10px;">Electron</a> <a href="/tags/HalloChat/" style="font-size: 10px;">HalloChat</a> <a href="/tags/MuseInk/" style="font-size: 10px;">MuseInk</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" style="font-size: 20px;">开发日志</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 15px;">日常</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E8%B0%83%E8%AF%95/" style="font-size: 10px;">调试</a> <a href="/tags/%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95/" style="font-size: 10px;">项目进展</a>
+      <a href="/tags/Electron/" style="font-size: 10px;">Electron</a> <a href="/tags/HalloChat/" style="font-size: 15px;">HalloChat</a> <a href="/tags/MuseInk/" style="font-size: 10px;">MuseInk</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" style="font-size: 20px;">开发日志</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 15px;">日常</a> <a href="/tags/%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/" style="font-size: 10px;">版本更新</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E8%B0%83%E8%AF%95/" style="font-size: 10px;">调试</a> <a href="/tags/%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95/" style="font-size: 10px;">项目进展</a>
     </div>
   </div>
 
@@ -642,6 +727,10 @@
       <ul>
         
           <li>
+            <a href="/2025/08/19/2025-08-19-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-v0.1.5%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/">HalloChat开发记录 - v0.1.5版本更新</a>
+          </li>
+        
+          <li>
             <a href="/2025/08/11/2025-08-11-HalloChat%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95-%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E/">今天和bug的爱恨情仇~💕</a>
           </li>
         
@@ -655,10 +744,6 @@
         
           <li>
             <a href="/posts/2025-07-26/">7月26日的小记</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/25/2025-04-12-%E5%A2%A8%E7%92%83%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC/">(no title)</a>
           </li>
         
       </ul>
